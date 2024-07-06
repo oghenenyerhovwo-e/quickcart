@@ -1,12 +1,13 @@
 import React from "react";
 import StarRatings from "react-star-ratings";
+import Image from "next/image";
 
 const Reviews = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <article className="block p-6 bg-white max-w-sm rounded-lg border border-gray-200 shadow-md mb-5">
         <div className="flex items-center mb-4 space-x-4">
-          <img
+          <Image
             className="w-10 h-10 rounded-full"
             src={"/logo192.png"}
             alt="user"

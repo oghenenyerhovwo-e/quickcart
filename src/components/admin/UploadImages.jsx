@@ -1,6 +1,8 @@
 import React from "react";
 import Sidebar from "../layout/Sidebar";
 
+import Image from "next/image";
+
 const UploadImages = () => {
   return (
     <section className="py-10">
@@ -29,7 +31,7 @@ const UploadImages = () => {
                 </div>
 
                 <div className="grid grid-cols-6 gap-2 my-5">
-                  <img
+                  <Image
                     src={"/logo192.png"}
                     alt="Preview"
                     className="col-span-1 object-contain shadow rounded border-2 border-gray p-2 h-full w-full"

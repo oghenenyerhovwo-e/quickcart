@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 import StarRatings from "react-star-ratings";
 import Filters from "../layout/Filters";
 import Header from "../layout/Header";
+import Image from "next/image";
 
 const ListProducts = () => {
   return (
@@ -24,7 +25,7 @@ const ListProducts = () => {
                         position: "relative",
                       }}
                     >
-                      <img
+                      <Image
                         src={"/logo192.png"}
                         alt="product anme"
                         height="240"

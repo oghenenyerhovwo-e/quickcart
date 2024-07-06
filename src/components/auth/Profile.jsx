@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 import UserAddresses from "../user/UserAddresses";
 import Sidebar from "../layout/Sidebar";
+import Image from "next/image";
 
 const Profile = () => {
   return (
@@ -13,7 +14,7 @@ const Profile = () => {
             <main className="md:w-2/3 lg:w-3/4 px-4">
               <figure className="flex items-start sm:items-center">
                 <div className="relative">
-                  <img
+                  <Image
                     className="w-16 h-16 rounded-full mr-4"
                     src={"/logo192.png"}
                     alt={"user name"}

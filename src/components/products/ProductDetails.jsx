@@ -3,6 +3,7 @@ import StarRatings from "react-star-ratings";
 import BreadCrumbs from "../layout/BreadCrumbs";
 import NewReview from "../reviews/NewReview";
 import Reviews from "../reviews/Reviews";
+import Image from "next/image";
 
 const ProductDetails = () => {
   return (
@@ -13,7 +14,7 @@ const ProductDetails = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-5">
             <aside>
               <div className="border border-gray-200 shadow-sm p-3 text-center rounded mb-5">
-                <img
+                <Image
                   className="object-cover inline-block"
                   src="/logo192.png"
                   alt="Product title"
@@ -23,7 +24,7 @@ const ProductDetails = () => {
               </div>
               <div className="space-x-2 overflow-auto text-center whitespace-nowrap">
                 <a className="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500 cursor-pointer">
-                  <img
+                  <Image
                     className="w-14 h-14"
                     src={"/logo192.png"}
                     alt="Product title"

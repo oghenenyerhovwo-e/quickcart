@@ -1,6 +1,9 @@
 import React from "react";
 import Sidebar from "../layout/Sidebar";
 
+// component
+import Image from 'next/image'
+
 const UpdateOrder = () => {
   return (
     <section className="py-10">
@@ -52,7 +55,7 @@ const UpdateOrder = () => {
                 <figure className="flex flex-row mb-4">
                   <div>
                     <div className="block w-20 h-20 rounded border border-gray-200 overflow-hidden p-3">
-                      <img
+                      <Image
                         src={"/logo192.png"}
                         height="60"
                         width="60"

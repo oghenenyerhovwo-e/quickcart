@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Image from "next/image";
+import Link from 'next/link';
 import BreadCrumbs from "../layout/BreadCrumbs";
 
 const Shipping = () => {
@@ -80,7 +81,7 @@ const Shipping = () => {
                 <figure class="flex items-center mb-4 leading-5">
                   <div>
                     <div class="block relative w-20 h-20 rounded p-1 border border-gray-200">
-                      <img
+                      <Image
                         width="50"
                         height="50"
                         src={"/logo192.png"}

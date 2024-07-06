@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
+import Image from "next/image";
 
 const Cart = () => {
   return (
@@ -21,7 +22,7 @@ const Cart = () => {
                       <figure className="flex leading-5">
                         <div>
                           <div className="block w-16 h-16 rounded border border-gray-200 overflow-hidden">
-                            <img src={"/logo192.png"} alt="Title" />
+                            <Image src={"/logo192.png"} alt="Title" />
                           </div>
                         </div>
                         <figcaption className="ml-3">

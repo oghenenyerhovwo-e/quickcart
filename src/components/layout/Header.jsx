@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
+import Image from "next/image";
 import Search from "./Search";
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
         <div className="flex flex-wrap items-center">
           <div className="flex-shrink-0 mr-5">
             <a href="/">
-              <img
+              <Image
                 src="logo192.png"
                 style={{ height: "50px", width: "60px" }}
                 height="40"
@@ -39,7 +40,7 @@ const Header = () => {
             </Link>
             <Link to="/me">
               <div className="flex items-center mb-4 space-x-3 mt-4 cursor-pointer">
-                <img className="w-10 h-10 rounded-full" src={"logo192.png"} />
+                <Image className="w-10 h-10 rounded-full" src={"logo192.png"} />
                 <div className="space-y-1 font-medium">
                   <p>
                     Ghulam

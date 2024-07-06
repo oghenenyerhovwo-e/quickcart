@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../layout/Sidebar";
+import Image from "next/image";
 
 const UpdateProfile = () => {
   return (
@@ -42,7 +43,7 @@ const UpdateProfile = () => {
                     <label className="block mb-1"> Avatar </label>
                     <div className="mb-4 flex flex-col md:flex-row">
                       <div className="flex items-center mb-4 space-x-3 mt-4 cursor-pointer md:w-1/5 lg:w-1/4">
-                        <img
+                        <Image
                           className="w-14 h-14 rounded-full"
                           src={"/logo192.png"}
                         />
