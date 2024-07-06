@@ -3,31 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-scheme: light;
+
+  --font-family: system-ui;
+
+  --fs-200: clamp(0.75rem, calc(0.73rem + 0.004vw), 0.79rem);
+  --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+  --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+  --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
+  --fs-600: clamp(1.62rem, calc(1.37rem + 1.24vw), 2.33rem);
+  --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
+  --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
+  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+
+  --clr-background: hsl(140, 33%, 98%);
+  --clr-text: hsl(140, 20%, 3%);
+  --clr-text-contrast: hsl(140, 20%, 3%);
+  --clr-primary: hsl(154, 44%, 52%);
+  --clr-primary-contrast: hsl(154, 44%, 52%);
+  --clr-secondary: hsl(154, 55%, 75%);
+  --clr-secondary-contrast: hsl(154, 55%, 75%);
+  --clr-accent: hsl(154, 66%, 61%);
+  --clr-accent-contrast: hsl(154, 66%, 61%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: var(--color-scheme);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+img{
+  font-size: var(--fs-300);
+  font-style: italic;
+  color: rgba(0,0,0,0);
 }
